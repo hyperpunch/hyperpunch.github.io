@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            overflow: hidden;
+        }
+        
+        #background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(45deg, #fd6f20, #fcb300, #fd6f20);
+            background-size: 200% 200%;
+            animation: gradientAnimation 10s ease infinite;
+        }
+        
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        #content {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            color: #fff;
+        }
+        
+        #name {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        #description {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+        
+        @media (max-width: 600px) {
+            #name {
+                font-size: 28px;
+            }
+            
+            #description {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="background"></div>
+    <div id="content">
+        <div id="name">Hey Voodoo Team,</div>
+        <div id="description">
+            I don't have a portfolio website so i made this special for you guys!<br>
+            I am 15 years old and live in the Netherlands, i have 3-4 years programming experience mostly.<br><br>
+            
+            Sadly i haven't really any released game yet, except a horror game i launched as a prototype on itch.io that i made in a few days,<br>
+            It is multiplayer and uses the framework <a href="https://www.photonengine.com/" target="_blank">Photon</a>, it gained over 200 downloads in the first day and it is still getting about 20 downloads per day.<br>
+            <a href="https://realcooler.itch.io/nbv2" target="_blank">Link to the game if you want to check it out!</a><br>
+
+            Anyways i have currently 3 ideas for a hyper casual game and i have the motaviation to finish them all, i am also willing to learn new things if needed.<br>
+            
+            Thanks for reading this and i hope to hear from you soon!<br>
+        </div>
+        <div id="contact">Contact: hyperpunchstudios@gmail.com</div>
+    </div>
+</body>
+</html>
